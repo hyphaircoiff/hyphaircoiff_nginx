@@ -48,16 +48,16 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
-+      VIRTUAL_HOST: ${DOMAIN}
-+      LETSENCRYPT_HOST: ${DOMAIN}
++     VIRTUAL_HOST: ${DOMAIN}
++     LETSENCRYPT_HOST: ${DOMAIN}
 volumes:
   db_data: {}
   wordpress_data: {}
 
-+networks:
-+  default:
-+    external:
-+      name: nginx-proxy
++ networks:
++   default:
++     external:
++       name: nginx-proxy
 ```
 
 ***note: if your service doesn't work on port 80, you can define a `VIRTUAL_PORT` variable with right service port***
