@@ -49,6 +49,7 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
 +      VIRTUAL_HOST: ${DOMAIN}
++      LETSENCRYPT_HOST: ${DOMAIN}
 volumes:
   db_data: {}
   wordpress_data: {}
