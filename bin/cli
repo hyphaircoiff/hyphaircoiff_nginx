@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Build root projects directory"
+current_dir=$PWD
+cd ..
+mkdir hyphaircoiff
+mv $current_dir hyphaircoiff/
+cd hyphaircoiff
+
+echo "Clone Hyphaircoiff Prestashop"
+git clone git@github.com:hyphaircoiff/hyphaircoiff_prestashop.git
+
+echo "Clone Hyphaircoiff Siret Verification module"
+git clone git@github.com:hyphaircoiff/ps_siret_verification.git
+
+echo "Clone Hyphaircoiff ERP"
+git clone git@github.com:hyphaircoiff/hyphaircoiff_erp.git
+
+echo "Clone Hyphaircoiff Monitoring"
+git clone git@github.com:hyphaircoiff/hyphaircoiff_monitoring.git
+
+echo "All repositories was setup and ready"
