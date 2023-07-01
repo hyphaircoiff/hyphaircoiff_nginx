@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $PWD == *\/hyphaircoiff\/* ]]; then
+    echo "Le répertoire hyphaircoiff existe déjà"
+    exit 1
+fi
+
 echo "Build root projects directory"
 current_dir=$PWD
 cd ..
