@@ -22,7 +22,7 @@ services:
     container_name: hyphaircoiff-nginx-proxy-letsencrypt
     restart: always
     environment:
-      DEFAULT_EMAIL: "contact@${DOMAIN}"
+      DEFAULT_EMAIL: "contact@hyphaircoiff.fr"
       NGINX_PROXY_CONTAINER: hyphaircoiff-nginx-proxy
       DEBUG: 0
     volumes:
