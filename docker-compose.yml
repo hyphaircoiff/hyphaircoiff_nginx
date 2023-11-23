@@ -20,6 +20,7 @@ services:
   hyphaircoiff-nginx-proxy-letsencrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion
     container_name: hyphaircoiff-nginx-proxy-letsencrypt
+    restart: always
     environment:
       DEFAULT_EMAIL: "contact@${DOMAIN}"
       NGINX_PROXY_CONTAINER: hyphaircoiff-nginx-proxy
